@@ -1,0 +1,34 @@
+<h1>Form</h1>
+<form [formGroup]="mf" (ngSubmit)="submit()">
+    <div>
+    Username
+    <input type="text" formControlName="username">
+    <div *ngIf="mf.get('username')?.hasError('required') && mf.get('username')?.touched">Required</div>
+    <div *ngIf="mf.get('username')?.hasError('notValid')">Not in format</div>
+    </div>
+
+    <div>
+    Model
+    <input type="text" formControlName="model">
+        <div *ngIf="mf.get('model')?.hasError('required') && mf.get('model')?.touched">Required</div>
+        </div>
+
+        <div>
+        Price
+        <input type="text" formControlName="price">
+            <div *ngIf="mf.get('price')?.hasError('required') && mf.get('price')?.touched">Required</div>
+            <div *ngIf="mf.get('price')?.hasError('minlength')">Min Length is 3</div>
+            </div>
+
+            <div>
+                PurchaseDate
+                <input type="text" formControlName="purchaseDate">
+                <div *ngIf="mf.get('purchaseDate')?.invalid && mf.get('purchaseDate')?.touched">
+                <div *ngIf="mf.get('purchaseDate')?.hasError('required')">Required</div>
+                <div *ngIf="mf.get('purchaseDate')?.hasError('pattern')">Not in format</div>
+                </div>
+
+
+
+<button type="submit">{{id ? "Update" : "Submit"}}</button>
+<div *ngIf="status">{{message}}</div>

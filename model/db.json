@@ -1,0 +1,60 @@
+{
+  "Data": [
+    {
+      "username": "jane",
+      "model": "ModelY",
+      "price": "1500",
+      "purchaseDate": "1675-15-20",
+      "id": "2"
+    },
+    {
+      "username": "smith",
+      "model": "ModelY",
+      "price": "1900",
+      "purchaseDate": "1675-15-22",
+      "id": "2b02"
+    },
+    {
+      "id": "eec3",
+      "username": "yabjx",
+      "model": "asxc",
+      "price": "345",
+      "purchaseDate": "1234-09-09"
+    },
+    {
+      "id": "fc37",
+      "username": "yabjx",
+      "model": "asxc",
+      "price": "345",
+      "purchaseDate": "1234-09-08"
+    },
+    {
+      "id": "a0b3",
+      "username": "jane_smith",
+      "model": "ModelY",
+      "price": "1500",
+      "purchaseDate": "1675-15-20"
+    },
+    {
+      "id": "0484",
+      "username": "jane",
+      "model": "ModelY",
+      "price": "1500",
+      "purchaseDate": "1675-15-20"
+    },
+    {
+      "id": "f794",
+      "username": "smith",
+      "model": "ModelY",
+      "price": "1900",
+      "purchaseDate": "1675-15-22"
+    },
+    {
+      "id": "f110",
+      "username": "Dev",
+      "model": "Oneplus 12r",
+      "price": "50000",
+      "purchaseDate": "2022-09-09"
+    }
+  ]
+}

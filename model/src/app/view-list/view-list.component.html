@@ -1,0 +1,29 @@
+<h2>List</h2>
+<a routerLink="/add">Add</a>
+<!-- <button (click)="sortAsc()" (click)="isAsc = !isAsc">{{ isAsc ? 'sort desc' : 'sort asc' }}</button> -->
+<input type="text" (input)="search($event)">
+<table>
+    <thead>
+        <th>id</th>
+        <th>Username</th>
+        <th>Model</th>
+        <th>Price</th>
+        <th>Purchase Date</th>
+        <th>Action</th>
+        </thead>
+        <tbody>
+    <tr *ngFor="let m of filtered$| async">
+        <td>{{m.id}}</td>
+        <td>{{m.username}}</td>
+        <td>{{m.model}}</td>
+        <td>{{m.price}}</td>
+        <td>{{m.purchaseDate}}</td>
+        <td>
+            <button (click)="delete(m.id)">Delete</button>
+            <button routerLink="/edit/{{m.id}}">Edit</button>
+            <button (click)="view">View</button>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        
